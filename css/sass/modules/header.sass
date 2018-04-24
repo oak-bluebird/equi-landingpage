@@ -1,0 +1,131 @@
+.header
+	+position(fixed, 0, 0, auto, 0)
+	+transition(all, .4s)
+	z-index: 10 
+	
+	height: 110px
+	color: #FFF
+	
+
+	@media (max-width: 575px)
+		height: auto
+		padding: 60px 0 10px 0
+		
+		[class*='col-']
+			position: static
+	
+	&.headroom--top
+		background-color: transparent!important
+		box-shadow: none!important
+	
+	.container-fluid
+		height: 100% 
+		padding: 0 40px 
+		
+		@media (max-width: 1400px)
+			padding: 0 15px
+			
+		.row
+			height: 100%
+			
+
+	.logo
+		width: 100px
+		display: block
+		margin-bottom: -22px 
+		margin-left: 15px 
+		
+		img
+			display: block
+			max-width: 100% 
+			
+		@media (max-width: 575px)
+			margin-bottom: 5px
+			margin-left: 0  
+			position: absolute
+			top: 15px
+			left: 10px
+			width: 70px
+
+	
+	.site-moto
+		font-size: 26px
+		font-style: italic
+		color: #454545
+		padding-left: 40px 
+		
+		@media (max-width: 1400px)
+			font-size: 18px
+			
+		@media (max-width: 575px)
+			display: none
+	
+
+	.login-block
+		margin-right: 15px 
+		
+		@media (max-width: 575px)
+			position: absolute
+			top: 10px
+			right: 10px
+			margin-right: 0 
+			
+			.btn
+				font-size: 14px 
+
+
+
+			
+.headroom--unpinned
+    transform: translateY(-100%)
+.headroom--pinned,
+.headroom--bottom 
+	transform: translateY(0)
+	background-color: #FFF 
+	box-shadow: 1.378px 4.806px 21px 0px rgba(0, 0, 0, 0.08)
+
+
+
+
+
+
+/* ------------------------------------ */
+/*  NAV STYLES  */
+
+.page-menu
+	padding-right: 25px
+	
+	@media (max-width: 575px)
+		padding-right: 0
+		margin-bottom: 10px  
+	 
+	ul
+		list-style-type: none
+
+		li
+			display: inline-block
+			vertical-align: middle
+			margin: 0 10px
+			font-size: 14px 
+
+			a
+				color: $main-color-dark
+				text-transform: uppercase
+				font-weight: 700 
+				
+				&:hover
+					text-decoration: underline
+
+/* ------------------------------------ */
+/*  MENU BUTTON  */
+
+.menu-button
+	display: none
+	+position(fixed, 15px, 10px, auto, auto)
+	background: white
+	border-radius: 50%
+	box-shadow: 0 5px 10px rgba(black, 0.5)
+	cursor: pointer
+	transform: rotate(0deg)
+	transition: .5s ease-in-out
+	cursor: pointer
