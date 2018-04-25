@@ -8,12 +8,19 @@ body
 	font-family: 'Josefin Sans' 
 	color: $text
 	
+.wow
+	visibility: hidden
+	
 .bg
 	position: relative
+	overflow: hidden
 	
 	.layer
 		position: absolute
 		z-index: -1 
+		
+		@media (max-width: 767px)
+			opacity: 0.5
 
 	.layer-1
 		width: 481px

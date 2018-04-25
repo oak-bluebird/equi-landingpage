@@ -183,7 +183,7 @@
 
 
 .our-platform
-	padding: 250px 0
+	padding: 0 0 250px
 	position: relative
 	
 	@media (max-width: 1199px)
@@ -194,10 +194,13 @@
 	
 	.platform-blured
 		position: absolute
-		top: 50%
+		top: 30%
 		right: 0 
 		transform: translateY(-50%)
 		max-width: 50% 
+		
+		@media (max-width: 1199px)
+			top: 50%
 		
 		@media (max-width: 991px)
 			display: none
