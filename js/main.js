@@ -108,6 +108,45 @@ jQuery(document).ready(function($) {
 
 
 
+
+
+
+    var words = [ 'Companies?', 'Real Estate?', 'Assets?' ]
+    var i = 0;
+
+    setInterval(function() {
+
+        $('.changing-words').fadeOut('500', function() {
+            $(this).text( words[i] ).fadeIn('500');
+            i++;
+        });
+
+        if ( i+1 > words.length ) {
+            i = 0;
+        }
+
+    }, 4000);
+
+
+    
+
+    $(window).on('scroll', function(event) {
+        event.preventDefault();
+        
+        var topDistance = $(window).scrollTop();
+        var layers = $('.parallax');
+
+        layers.each(function(index, el) {
+            var depth = $(this).attr('data-depth');
+            var movement = -(topDistance * depth)
+            var translate3d = 'translate3d(0, ' + movement + 'px, 0)';
+
+            $(this).css('transform', translate3d);
+        }); 
+    });
+
+
+
     /*---------------------------
                                   Fancybox
     ---------------------------*/
