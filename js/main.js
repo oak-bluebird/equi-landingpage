@@ -171,6 +171,37 @@ jQuery(document).ready(function($) {
 
 
 
+
+
+
+    $('.js-mailchimp-form').each(function(index, el) {
+        var form = $(this);
+
+        form.ajaxChimp({
+            url: 'https://online.us17.list-manage.com/subscribe/post?u=b208efabffc40996334e17c12&id=f6454771d8',
+            callback: function(result){
+                if ( result.result == 'error' ) {
+                    var message = result.msg.replace('0 - ', "");
+                    var alert = $('<div class="alert alert-danger" style="display: none;">'+message+'</div>');
+
+                    form.find('.alerts').html('').append( alert );
+                    alert.fadeIn(500);
+                } else {
+                    var message = result.msg.replace('0 - ', "");
+                    var alert = $('<div class="alert alert-success" style="display: none;">'+message+'</div>');
+
+                    form.find('.alerts').html('').append( alert );
+                    alert.fadeIn(500);
+                    
+                    form[0].reset();
+                }
+            }
+        });
+
+    });
+
+
+
     /*---------------------------
                                   Fancybox
     ---------------------------*/
