@@ -25,6 +25,32 @@ function exist(el){
 
 jQuery(document).ready(function($) {
 
+
+    var images_path = 'https://coinfabric.com/equi/images';
+
+    $('img').each(function(index, el) {
+        var src = $(this).attr('src');
+
+        var new_src = src.replace('images', images_path);
+
+        $(this).attr('src', new_src);
+    });
+
+    var pattern = "images",
+        re = new RegExp(pattern, "g");
+
+    var str = $('.images-styles').text();
+
+    $('.images-styles').html( str.replace( re, images_path) );
+
+
+
+
+    setTimeout( function(){
+        $('.preloader').fadeOut('1000');
+    }, 2000);
+
+
     $(".header").headroom();
     
     /*---------------------------
@@ -111,7 +137,7 @@ jQuery(document).ready(function($) {
 
 
 
-    var words = [ 'Companies?', 'Real Estate?', 'Assets?' ]
+    var words = [ 'Technology Startups?', 'Real Estate?', 'Assets?' ]
     var i = 0;
 
     setInterval(function() {
@@ -130,23 +156,22 @@ jQuery(document).ready(function($) {
 
     
 
-    $(window).on('scroll', function(event) {
-        event.preventDefault();
-        
-        var topDistance = $(window).scrollTop();
-        var layers = $('.parallax');
+    if ( !window.params.isMobile ) {
+        $(window).on('scroll', function(event) {
+            event.preventDefault();
+            
+            var topDistance = $(window).scrollTop();
+            var layers = $('.parallax');
 
-        layers.each(function(index, el) {
-            var depth = $(this).attr('data-depth');
-            var movement = -(topDistance * depth)
-            var translate3d = 'translate3d(0, ' + movement + 'px, 0)';
+            layers.each(function(index, el) {
+                var depth = $(this).attr('data-depth');
+                var movement = -(topDistance * depth)
+                var translate3d = 'translate3d(0, ' + movement + 'px, 0)';
 
-            $(this).css('transform', translate3d);
-        }); 
-    });
-
-
-
+                $(this).css('transform', translate3d);
+            }); 
+        });    
+    }
     
 
 
@@ -170,6 +195,19 @@ jQuery(document).ready(function($) {
     });
 
 
+    /*---------------------------
+                                    Accordeon
+    ---------------------------*/
+    $('.js-faq-handler').on('click', function(event) {
+        event.preventDefault();
+        var content = $(this).siblings('.faq-item-content');
+        $('.js-faq-handler').not($(this)).parent().removeClass('is-open');
+        $('.faq-item-content').not(content).slideUp();
+        $(this).parent().toggleClass('is-open');
+        content.slideToggle();
+    });
+
+
 
 
 
@@ -178,7 +216,7 @@ jQuery(document).ready(function($) {
         var form = $(this);
 
         form.ajaxChimp({
-            url: 'https://online.us17.list-manage.com/subscribe/post?u=b208efabffc40996334e17c12&id=f6454771d8',
+            url: 'https://capital.us17.list-manage.com/subscribe/post?u=6ad31076a58f0798185e70776&id=565635e94b',
             callback: function(result){
                 if ( result.result == 'error' ) {
                     var message = result.msg.replace('0 - ', "");

@@ -3,13 +3,14 @@
 	
 
 .popup
-	max-width: 700px
+	width: 900px
+	max-width: 100% 
 	color: $main-color-dark
 	border-radius: 10px
 	
 	img
 		display: block
-		width: 220px
+		width: 260px
 		max-width: 100% 
 	
 	h2
@@ -23,6 +24,8 @@
 		
 
 	&-content
+		font-size: 16px
+		 
 		> *:not(:last-child)
 			margin-bottom: 1em 
 			
@@ -99,6 +102,12 @@
 	font-size: 18px 
 	
 
+.login-holder
+	background-image: url(../images/popup-bg.png), url(../images/bg-part-1.png)
+	background-position: 100% 50%, left -150px bottom -150px
+	background-repeat: no-repeat 
+	background-color: transparent 
+
 .site-popup
 	width: 900px
 	background-color: #fff
@@ -116,6 +125,11 @@
 		background-position: 0 0
 		background-size: 80% 
 		padding: 20% 15px 30px
+		
+
+	&.login
+		background-image: url(../images/soon.png) 
+		box-shadow: none
 	
 
 	&-text
@@ -174,7 +188,9 @@
 					top: 0.625em
 					left: 25px
 					transform: translate(-50%, -50%)
-					
+	
+	&.login &-text
+		max-width: 100% 			
 
 
 	&-footer

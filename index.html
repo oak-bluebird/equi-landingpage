@@ -12,9 +12,58 @@
         
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
+        <style class="images-styles">
+            .site-popup {
+                background-image: url(images/back.png), url(images/popup-bg.png);
+            }
+            @media (max-width: 767px) {
+                .site-popup {
+                    background-image: url(images/back.png);
+                }
+            }
+
+            .bg .layer-1 {
+                background-image: url(images/bg-part-1.png);
+            }
+            .bg .layer-2 {
+                background-image: url(images/bg-part-2.png);
+            }
+            .bg .layer-3 {
+                background-image: url(images/bg-part-3.png);
+            }
+            .bg .layer-4 {
+                background-image: url(images/bg-part-4.png);
+            }
+            .bg .layer-5 {
+                background-image: url(images/bg-part-5.png);
+            }
+            .bg .layer-6 {
+                background-image: url(images/bg-part-6.png);
+            }
+
+            .team {
+                background-image: url(images/team-bg.png);
+            }
+
+            .faq-section {
+                background-image: url(images/faq.png);
+            }
+            .faq-item-header .check {
+                background-image: url(images/arrow-down.svg);
+            }
+        </style>
     </head>
     <body class="site-popup-opened">
+        
 
+        <div class="preloader">
+            
+            <div class="loader">
+                <img src="images/loader.png" alt="">
+            </div>
+
+        </div>
 
        
         <!--=================================================================================================-->
@@ -46,7 +95,7 @@
                             </nav><!-- end nav -->
 
                             <div class="login-block">
-                                <a href="#" class="btn btn-secondary">
+                                <a href="login.html" class="btn btn-secondary">
                                     <span class="btn-label">Login to your Account</span>
                                     <img src="images/arrow.png" class="btn-icon" alt="">
                                 </a>
@@ -143,7 +192,8 @@
                                 
                                 <div class="wow fadeInUp" data-wow-delay="1.5s">
                                     <div class="text-block-content">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+                                        <p>The EQUI Investment and Blockchain teams are creating a Blockchain-Powered investment platform, giving you access to opportunities that were previously only available to high networth individuals, with broad investment networks.</p>
+                                        <p>The EQUI Platform is a secure, transparent and easy to use web platform removing barriers, and giving everyone an opportunity to invest.</p>
                                     </div>
 
                                     <span class="btn btn-light">MVP Expected: May 2018</span>    
@@ -177,13 +227,14 @@
                             </div>
                             <div class="col-12 col-sm-8">
                                 <div class="popup-desc">
-                                    <h2>Lorem ipsum.</h2>
-                                    <p>Lorem ipsum dolor sit.</p>
+                                    <h2>BARONESS MONE OF MAYFAIR, OBE</h2>
+                                    <p>Co-Founder</p>
                                 </div>
                                 <hr>
                                 <div class="popup-content">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis quis optio, neque. Fugiat dolore quaerat, rerum dignissimos, repudiandae voluptas. Quibusdam eligendi sed beatae impedit amet corrupti, sunt ipsa ipsum laudantium.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus nemo obcaecati adipisci similique repudiandae tempora saepe accusantium doloribus. Autem, non! Earum iure cum sit, pariatur accusantium facilis soluta mollitia veritatis.</p>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores omnis officia, inventore laudantium animi, vitae adipisci error voluptate velit eaque placeat aliquam libero, accusamus perspiciatis deserunt deleniti ex harum, illum?</p>
+                                    <p>Michelle is one of the UK’s most influential businesswomen and an award-winning entrepreneur. She is the appointed Start-Up Business Tsar to the UK Government and a leading advocate for female equality in the workplace.</p>
+                                    <p>Michelle came from an underprivileged background to found and manage Ultimo Brands International. Her lingerie empire spanned the globe and in 2000 she won the coveted title of World Young Business Achiever at the Epcot Centre in Florida. In the same year she also scooped Business Woman of the Year Award at the Corporate Elite Awards in London. In 2010 Michelle received an OBE from Her Majesty Queen Elizabeth II for her outstanding contribution to business, and she was further honoured in 2015 with a Life Peerage to the House of Lords by the UK’s Prime Minister.</p>
+                                    <p>Having built Ultimo into a global success Michelle decided the time was right to exit the business and in 2014 sold to MAS Holdings. She has a number of other business interests including both jewellery and interior design, global speaking, and mentorship programs. Over the past few years she has invested in technology businesses and pursued interests in the cryptocurrency market. In late 2017 she was pivotal in the launch of a $250 million development of two residential towers and a retail complex in Dubai to the cryptocurrency community.</p>
                                 </div>
                             </div>
                         </div>
@@ -199,13 +250,16 @@
                             </div>
                             <div class="col-12 col-sm-8">
                                 <div class="popup-desc">
-                                    <h2>Lorem ipsum.</h2>
-                                    <p>Lorem ipsum dolor sit.</p>
+                                    <h2>DOUG BARROWMAN</h2>
+                                    <p>Lead Founder</p>
                                 </div>
                                 <hr>
                                 <div class="popup-content">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis quis optio, neque. Fugiat dolore quaerat, rerum dignissimos, repudiandae voluptas. Quibusdam eligendi sed beatae impedit amet corrupti, sunt ipsa ipsum laudantium.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus nemo obcaecati adipisci similique repudiandae tempora saepe accusantium doloribus. Autem, non! Earum iure cum sit, pariatur accusantium facilis soluta mollitia veritatis.</p>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores omnis officia, inventore laudantium animi, vitae adipisci error voluptate velit eaque placeat aliquam libero, accusamus perspiciatis deserunt deleniti ex harum, illum?</p>
+                                    <p>Doug is an experienced and successful businessman who has spent  his  entire career investing in and operating businesses. A Scotsman by origin, Doug graduated in business studies from Glasgow University in 1985. He then went on to qualify as a Chartered Accountant with Deloitte Haskins and Sells in 1988.</p>
+                                    <p>Age 22, his first venture was to open 3 paintball sites in Scotland. Awards followed, and his success resulted in international private equity group 3i recruiting him to their investment team. In 1992, he decided to branch out on his own again, setting up and developing a successful corporate finance practice which he exited in 1999 to concentrate on his private investment vehicle, Aston Ventures.</p>
+                                    <p>Over the next 10 years, Aston Ventures made 13 acquisitions of old economy businesses with a total turnover in excess of £400 million. In recent years Aston has focused on technology investments and in 2017 led the acquisition of former tech unicorn Ve Global. Since 2008, Doug has built the Knox Group of Companies and, as Founder and Chairman, he oversees a diverse and successful collection of companies whose business activities include private equity, property and wealth management. Knox employs over 350 staff across a number of international locations and has funds under management and administration approaching £3 billion.</p>
+                                    <p>EQUI is the brainchild of Doug’s embracement of Blockchain technology and a passion for what the cryptocurrency market can achieve. In 2017 Doug successfully launched the first large scale property development to be available for sale in Bitcoin. EQUI will be another first; offering venture capital opportunities backed by leading entrepreneurs to the crypto community.</p>
+
                                 </div>
                             </div>
                         </div>
@@ -226,13 +280,12 @@
                             </div>
                             <div class="col-12 col-sm-8">
                                 <div class="popup-desc">
-                                    <h2>Lorem ipsum.</h2>
-                                    <p>Lorem ipsum dolor sit.</p>
+                                    <h2>ANTHONY PAGE</h2>
+                                    <p>Trustee</p>
                                 </div>
                                 <hr>
                                 <div class="popup-content">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis quis optio, neque. Fugiat dolore quaerat, rerum dignissimos, repudiandae voluptas. Quibusdam eligendi sed beatae impedit amet corrupti, sunt ipsa ipsum laudantium.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus nemo obcaecati adipisci similique repudiandae tempora saepe accusantium doloribus. Autem, non! Earum iure cum sit, pariatur accusantium facilis soluta mollitia veritatis.</p>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores omnis officia, inventore laudantium animi, vitae adipisci error voluptate velit eaque placeat aliquam libero, accusamus perspiciatis deserunt deleniti ex harum, illum?</p>
+                                    <p>Anthony is the Managing Director of Knox House Trust, a leading corporate services and trust company.  Anthony has played a key role in the growth and development of the company since inception with a particular focus on the private client and family office divisions. He is on the Board of Trustees of CasinoCoin, an open source, peer to peer cryptocurrency that has been specifically designed for the regulated online gaming industry.</p>
                                 </div>
                             </div>
                         </div>
@@ -249,13 +302,11 @@
                             </div>
                             <div class="col-12 col-sm-8">
                                 <div class="popup-desc">
-                                    <h2>Lorem ipsum.</h2>
-                                    <p>Lorem ipsum dolor sit.</p>
+                                    <h2>JOHN CALDWELL</h2>
                                 </div>
                                 <hr>
                                 <div class="popup-content">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis quis optio, neque. Fugiat dolore quaerat, rerum dignissimos, repudiandae voluptas. Quibusdam eligendi sed beatae impedit amet corrupti, sunt ipsa ipsum laudantium.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus nemo obcaecati adipisci similique repudiandae tempora saepe accusantium doloribus. Autem, non! Earum iure cum sit, pariatur accusantium facilis soluta mollitia veritatis.</p>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores omnis officia, inventore laudantium animi, vitae adipisci error voluptate velit eaque placeat aliquam libero, accusamus perspiciatis deserunt deleniti ex harum, illum?</p>
+                                    <p>In 2004 John became CEO and Editor-In-Chief of PokerNews. com and over the next five years he helped grow the company from a three person operation to over 70 personnel. John then took up a position as a Director at PokerStars.com, serving on both the executive and marketing leadership teams. John is currently a partner at Narus Advisors, a boutique gaming consultancy advising on new technologies and regulatory matters relating to the gaming industry. He is a staunch advocate of Blockchain and is involved in ventures built around the utilisation or promotion of cryptocurrency.</p>
                                 </div>
                             </div>
                         </div>
@@ -272,13 +323,11 @@
                             </div>
                             <div class="col-12 col-sm-8">
                                 <div class="popup-desc">
-                                    <h2>Lorem ipsum.</h2>
-                                    <p>Lorem ipsum dolor sit.</p>
+                                    <h2>DUNCAN CAMERON</h2>
                                 </div>
                                 <hr>
                                 <div class="popup-content">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis quis optio, neque. Fugiat dolore quaerat, rerum dignissimos, repudiandae voluptas. Quibusdam eligendi sed beatae impedit amet corrupti, sunt ipsa ipsum laudantium.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus nemo obcaecati adipisci similique repudiandae tempora saepe accusantium doloribus. Autem, non! Earum iure cum sit, pariatur accusantium facilis soluta mollitia veritatis.</p>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores omnis officia, inventore laudantium animi, vitae adipisci error voluptate velit eaque placeat aliquam libero, accusamus perspiciatis deserunt deleniti ex harum, illum?</p>
+                                    <p>Duncan was an early crypto adopter, purchasing his first Bitcoin in 2011 and has worked on solutions that integrates with the popular Blockchain API. Since then, Duncan has worked on various crypto projects to support the global adoption of the technology. More recently, Duncan is the founder of the CasinoCoin foundation which has brought the cryptocurrency CasinoCoin to the regulated online gambling industry.</p>
                                 </div>
                             </div>
                         </div>
@@ -295,13 +344,12 @@
                             </div>
                             <div class="col-12 col-sm-8">
                                 <div class="popup-desc">
-                                    <h2>Lorem ipsum.</h2>
-                                    <p>Lorem ipsum dolor sit.</p>
+                                    <h2>TIM EVE</h2>
+                                    <p>Investment Director</p>
                                 </div>
                                 <hr>
                                 <div class="popup-content">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis quis optio, neque. Fugiat dolore quaerat, rerum dignissimos, repudiandae voluptas. Quibusdam eligendi sed beatae impedit amet corrupti, sunt ipsa ipsum laudantium.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus nemo obcaecati adipisci similique repudiandae tempora saepe accusantium doloribus. Autem, non! Earum iure cum sit, pariatur accusantium facilis soluta mollitia veritatis.</p>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores omnis officia, inventore laudantium animi, vitae adipisci error voluptate velit eaque placeat aliquam libero, accusamus perspiciatis deserunt deleniti ex harum, illum?</p>
+                                    <p>Tim qualified as a Chartered Accountant in 1996. His early career focused on advising owner managed businesses and he successfully led a number of high profile acquisitions and disposals. In 2001 Tim joined the venture capital company Aston Ventures as a Partner. Over the intervening years Tim has been heavily involved in sourcing, completing and managing investment opportunities.</p>
                                 </div>
                             </div>
                         </div>
@@ -318,13 +366,11 @@
                             </div>
                             <div class="col-12 col-sm-8">
                                 <div class="popup-desc">
-                                    <h2>Lorem ipsum.</h2>
-                                    <p>Lorem ipsum dolor sit.</p>
+                                    <h2>Jonas Amazix</h2>
                                 </div>
                                 <hr>
                                 <div class="popup-content">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis quis optio, neque. Fugiat dolore quaerat, rerum dignissimos, repudiandae voluptas. Quibusdam eligendi sed beatae impedit amet corrupti, sunt ipsa ipsum laudantium.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus nemo obcaecati adipisci similique repudiandae tempora saepe accusantium doloribus. Autem, non! Earum iure cum sit, pariatur accusantium facilis soluta mollitia veritatis.</p>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores omnis officia, inventore laudantium animi, vitae adipisci error voluptate velit eaque placeat aliquam libero, accusamus perspiciatis deserunt deleniti ex harum, illum?</p>
+                                    <p>Jonas is Founder & CEO of AmaZix com</p>
                                 </div>
                             </div>
                         </div>
@@ -341,13 +387,11 @@
                             </div>
                             <div class="col-12 col-sm-8">
                                 <div class="popup-desc">
-                                    <h2>Lorem ipsum.</h2>
-                                    <p>Lorem ipsum dolor sit.</p>
+                                    <h2>MARK PEARSON</h2>
                                 </div>
                                 <hr>
                                 <div class="popup-content">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis quis optio, neque. Fugiat dolore quaerat, rerum dignissimos, repudiandae voluptas. Quibusdam eligendi sed beatae impedit amet corrupti, sunt ipsa ipsum laudantium.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus nemo obcaecati adipisci similique repudiandae tempora saepe accusantium doloribus. Autem, non! Earum iure cum sit, pariatur accusantium facilis soluta mollitia veritatis.</p>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores omnis officia, inventore laudantium animi, vitae adipisci error voluptate velit eaque placeat aliquam libero, accusamus perspiciatis deserunt deleniti ex harum, illum?</p>
+                                    <p>Mark is an award winning digital entrepreneur having achieved multiple successful exits over the last decade. Establishing Fuel Ventures in early 2015 - an early-stage technology investment fund focusing on high growth businesses. Along with the fund and his personal investments, Mark has 18 companies in his portfolio including fast growth Paddle a platform for software companies that was recently named the UK’s #1 fastest growing software company by Deloitte and Moteefe which was awarded best Angel - VC scale up Investment at the UKBAA awards. Prior to Fuel Ventures, Mark built a European discount network, Markco Media from a back-bedroom business to a multi-million-pound company which sold in 2014 for £55 million, making it one of the largest UK exits that year.</p>
                                 </div>
                             </div>
                         </div>
@@ -364,13 +408,12 @@
                             </div>
                             <div class="col-12 col-sm-8">
                                 <div class="popup-desc">
-                                    <h2>Lorem ipsum.</h2>
-                                    <p>Lorem ipsum dolor sit.</p>
+                                    <h2>Dean Cannell</h2>
+                                    <p>Lead Advisor</p>
                                 </div>
                                 <hr>
                                 <div class="popup-content">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis quis optio, neque. Fugiat dolore quaerat, rerum dignissimos, repudiandae voluptas. Quibusdam eligendi sed beatae impedit amet corrupti, sunt ipsa ipsum laudantium.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus nemo obcaecati adipisci similique repudiandae tempora saepe accusantium doloribus. Autem, non! Earum iure cum sit, pariatur accusantium facilis soluta mollitia veritatis.</p>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores omnis officia, inventore laudantium animi, vitae adipisci error voluptate velit eaque placeat aliquam libero, accusamus perspiciatis deserunt deleniti ex harum, illum?</p>
+                                    <p>Dean has more than 10 years experience working with startup technology companies helping them from ideation to funding or acquisition. After 3 years participating in the ICO space, as an investor and in various other capacities, Dean founded CoinFabric.com to establish a strong team of ICO service professionals to help companies achieve their fundraising goals through ICO Crowdsales, & long-term goals of building scalable & successful blockchain companies to solve real-world problems.</p>
                                 </div>
                             </div>
                         </div>
@@ -388,6 +431,62 @@
 
 
 
+        <section class="faq-section" id="faq">
+
+            <div class="container">
+
+                <div class="faq-wrapper">
+                    
+                    <h2 class="faq-title">FREQUENTLY ASKED QUESTIONS</h2>
+
+                    <div class="faq">
+                        <div class="faq-item">
+                            <h3 class="faq-item-header js-faq-handler">Questions about the upcomning ICO
+                                <i class="check" ></i>
+                            </h3>
+                            <div class="faq-item-content">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <h3 class="faq-item-header js-faq-handler">Questions about the upcomning ICO
+                                <i class="check" ></i>
+                            </h3>
+                            <div class="faq-item-content">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <h3 class="faq-item-header js-faq-handler">Questions about the upcomning ICO
+                                <i class="check" ></i>
+                            </h3>
+                            <div class="faq-item-content">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="ask-social">
+                            <p>If we havent answered your question please join us on our Telegram Group</p>
+                            <a href="https://t.me/equicapital" target="_block"><img src="images/telegram.svg" alt=""></a>
+                        </div>
+                </div>
+
+
+                <div class="footer">
+                    <h3>Giving everyone an opportunity to invest.</h3>
+                    <p>© EQUI Capital</p>
+                </div>
+
+            </div> 
+        </section> <!-- end setion -->
+
+
+
         <div class="telegram-notification compensate-for-scrollbar wow bounceIn" data-wow-delay="2s">
             <div class="white-box">
                 
@@ -395,7 +494,7 @@
                     <h4>We’re on Telegram</h4>
                     <p>Come ask us anything</p>
 
-                    <a href="#" class="btn btn-primary">
+                    <a href="https://t.me/equicapital" class="btn btn-primary" target="_blank">
                         <img src="images/telegram.svg" class="btn-icon" alt="">
                         <span class="btn-label">Join us now</span>
                         <img src="images/arrow.png" class="btn-icon" alt="">
