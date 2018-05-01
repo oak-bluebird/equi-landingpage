@@ -1,9 +1,10 @@
 .offer
 	height: 100vh
 	min-height: 660px
+	padding-top: 80px 
 	display: flex
 	align-items: center
-	justif-content: center
+	justify-content: center
 	
 	&-container
 		@extend .container
@@ -48,7 +49,7 @@
 			margin-right: auto  
 
 	&-text
-		font-size: 52px
+		font-size: 48px
 		color: $main-color-dark 
 		line-height: 60px 
 		letter-spacing: -0.015em 
@@ -527,3 +528,39 @@
 		padding-right: 50px
 	@media (max-width: 340px)
 		font-size: 14px
+		
+
+
+
+
+
+.partners
+	padding-bottom: 50px
+	
+	@media (max-width: 767px)
+		padding-top: 50px 
+	 
+	h2
+		text-align: center
+		margin-bottom: 1em
+		color: #000000
+		font-size: 38px 
+		margin-bottom: 70px
+		font-weight: 300 
+		
+		@media (max-width: 767px)
+			font-size: 32px
+			margin-bottom: 1em  
+		
+	a
+		display: inline-block
+		max-width: 100%
+		margin-bottom: 20px 
+		
+		img
+			display: block
+			width: auto
+			max-width: 220px
+			
+			@media (max-width: 1199px)
+				max-width: 90% 
