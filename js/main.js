@@ -25,6 +25,11 @@ function exist(el){
 
 jQuery(document).ready(function($) {
 
+    $('.team-item-desc-socials a').on('click', function(event) {
+        event.stopPropagation();
+        /* Act on the event */
+    });
+
 
     var images_path = 'https://coinfabric.com/equi/images';
 
