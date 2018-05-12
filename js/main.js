@@ -33,7 +33,7 @@ jQuery(document).ready(function($) {
 
         var new_src = src.replace('images', images_path);
 
-        $(this).attr('src', new_src);
+        //$(this).attr('src', new_src);
     });
 
     var pattern = "images",

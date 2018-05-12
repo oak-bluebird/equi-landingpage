@@ -564,3 +564,96 @@
 			
 			@media (max-width: 1199px)
 				max-width: 90% 
+				
+
+
+.section
+	padding: 50px 0
+	
+	&-heading
+		color: $main-color-light
+		font-size: 26px
+		margin-top: 15px
+		padding-bottom: 40px 
+		
+		h2
+			font-size: inherit 
+			text-transform: uppercase
+			
+
+	.block-heading
+		padding-bottom: 30px
+		color: $main-color-light
+		font-size: 22px 
+		
+		h3
+			font-size: inherit 
+			
+
+.new-team
+	background-color: $main-color-dark
+	padding-bottom: 20px 
+	
+	.section-heading
+		color: #fff
+		margin-top: 0 
+		
+	.block-heading
+		color: #fff
+		
+
+
+
+.team-item
+	position: relative
+	border-radius: 10px
+	overflow: hidden
+	max-width: 290px
+	margin: 0 auto 30px
+	box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.25)
+	display: block
+	
+	img
+		display: block
+		max-width: 100% 
+		
+
+	&-desc
+		position: absolute
+		left: 0
+		bottom: 0
+		right: 0 
+		padding: 0.75em
+		display: block
+		color: #fff
+		background: linear-gradient(to bottom, rgba(40,68,125,0.8) 0%, rgba(0,85,255,0.8) 100%)
+		text-align: center
+		
+		@media (max-width: 1199px) and (min-width: 576px)
+			font-size: 16px 
+		
+		&-name
+			font-size: 1.2em 
+			
+		&-position
+			font-weight: 300
+			font-size: 0.9em  
+		
+
+		&-socials
+			padding-top: 10px 
+			display: flex
+			align-items: center
+			justify-content: center
+			
+			a
+				margin: 0 3px
+				transition: all 0.3s ease
+				
+				&:hover
+					transform: scale(1.2)
+				
+				img
+					display: block
+					max-width: 22px
+					max-height: 22px  
