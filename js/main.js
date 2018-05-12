@@ -33,7 +33,7 @@ jQuery(document).ready(function($) {
 
         var new_src = src.replace('images', images_path);
 
-        //$(this).attr('src', new_src);
+        $(this).attr('src', new_src);
     });
 
     var pattern = "images",
@@ -47,7 +47,19 @@ jQuery(document).ready(function($) {
 
 
     setTimeout( function(){
-        $('.preloader').fadeOut('1000');
+        $('.preloader').fadeOut('1000', function(){
+            $('body').removeClass('site-popup-opened');
+
+            var wow = new WOW(
+              {
+                boxClass:     'wow',      // animated element css class (default is wow)
+                animateClass: 'animated', // animation css class (default is animated)
+                offset:       100,          // distance to the element when triggering the animation (default is 0)
+                mobile:       true,       // trigger animations on mobile devices (default is true)
+              }
+            );
+            wow.init();
+        });
     }, 2000);
 
 
@@ -177,7 +189,7 @@ jQuery(document).ready(function($) {
 
 
 
-    $('.js-continue').on('click', function(event) {
+    /*$('.js-continue').on('click', function(event) {
         event.preventDefault();
         
         $('.site-popup-holder').fadeOut('1000');
@@ -192,7 +204,7 @@ jQuery(document).ready(function($) {
           }
         );
         wow.init();
-    });
+    });*/
 
 
     /*---------------------------
